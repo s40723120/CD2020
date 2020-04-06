@@ -108,6 +108,7 @@ img.add_border {
 </head>
 <body>
 <div class='container'><nav>
+        
     <div class="site-wrap">
 
     <div class="site-mobile-menu">
@@ -153,4 +154,49 @@ img.add_border {
           </div>
           
         </header>
-    </nav><section><h1>Site Map</h1><div id="tipue_search_content"></div><ul><li><a href='About.html'>About</a><li><a href='Develop.html'>Develop</a><li><a href='Python3.8.2.html'>Python3.8.2</a><li><a href='Coppeliasim.html'>Coppeliasim</a><ul><li><a href='Entities.html'>Entities</a><ul><li><a href='Scene objects.html'>Scene objects</a><li><a href='Collections.html'>Collections</a></li></ul><li><a href='Calculation modules.html'>Calculation modules</a><li><a href='Writing code.html'>Writing code</a></li></ul></section></div></body></html>
+    <div id="tipue_search_content">Entities << <a href='Entities.html'>Previous</a> <a href='Collections.html'>Next</a> >> Collections<br /><h1>Scene objects</h1>
+<p><strong><a href="https://www.coppeliarobotics.com/helpFiles/index.html">Scene objects</a><span> </span>場景物件</strong><br/>The main elements in CoppeliaSim that are used for building a simulation scene are scene objects (objects in short).<br/>CoppeliaSim中用於構建模擬場景的主要元素是場景物件（簡而言之）<br/>Objects are visible in the scene hierarchy and in the scene view.<br/>物件在場景層次結構和場景視圖中可見。<br/>In the scene view, objects have a three dimensional representation as illustrated in following figure:<br/>在物件視圖中，物件具有三維表示，如下圖所示：<br/>Following list gives a brief functional description of each object type:<br/>以下列表簡要介紹了每種物件類型的功能：</p>
+<p><strong>●<a href="https://www.coppeliarobotics.com/helpFiles/en/shapes.htm">Shapes</a></strong>: a shape is a rigid mesh that is composed of triangular faces.<br/>形狀：形狀是由三角形面組成的剛性網格。<br/><strong>●<a href="https://www.coppeliarobotics.com/helpFiles/en/joints.htm">Joints</a></strong>: a joint object is a joint or actuator. Four types are supported: revolute joints, prismatic joints, screws and spherical joints.<br/>關節：關節物件是關節或執行器。四種類型支持架：旋轉接頭，棱柱接頭，螺釘和球形接頭。<br/><strong>●<a href="https://www.coppeliarobotics.com/helpFiles/en/graphs.htm">Graphs</a></strong>: a graph is used to record and visualize simulation data.<br/>圖形：圖形用於記錄和可視化模擬數據。<br/><strong>●<a href="https://www.coppeliarobotics.com/helpFiles/en/dummies.htm">Dummies</a></strong>: a dummy is a point with orientation. Dummies are multipurpose objects that can have many different applications.<br/>假人：假人是具有定向的點。假人是可以具有許多不同應用程序的多用途對象。<br/><strong>●<a href="https://www.coppeliarobotics.com/helpFiles/en/proximitySensors.htm">Proximity sensor</a></strong><a href="https://www.coppeliarobotics.com/helpFiles/en/proximitySensors.htm">s</a>: a proximity sensor detects objects in a geometrically exact fashion within its detection volume. CoppeliaSim supports pyramid-, cylinder-, disk-, cone- and ray-type proximity sensors.<br/>接近傳感器：接近傳感器以幾何精確的方式在其檢測範圍內檢測物體。 CoppeliaSim支持金字塔型，圓柱型，圓盤型，圓錐型和射線型接近傳感器。<br/><strong>●<a href="https://www.coppeliarobotics.com/helpFiles/en/visionSensors.htm">Vision sensors</a></strong>: a vision sensor is a camera-type sensor, reacting to light, colors and images.<br/>視覺傳感器：視覺傳感器是一種相機型傳感器，對光線，顏色和圖像有反應。<br/><strong>●<a href="https://www.coppeliarobotics.com/helpFiles/en/forceSensors.htm">Force sensors</a></strong>: a force sensor is an object able to measure forces and torques that are applied to it. It also has the ability to break if a given threashold is overshot.<br/>力傳感器：力傳感器是能夠測量施加到其上的力和扭矩的對象。 如果給定的閾值被超出，它也具有打破的能力。<br/><strong>●<a href="https://www.coppeliarobotics.com/helpFiles/en/cameras.htm">Cameras</a></strong>: a camera is an object that allows seeing the simulation scene from various view points.<br/>攝影機：攝影機是一個可以從各個角度查看模擬場景的對象。<br/><strong>●<a href="https://www.coppeliarobotics.com/helpFiles/en/lights.htm">Lights</a></strong>: a light is an object that allows illuminating the simulation scene.<br/>燈光：燈光是一個可以照亮模擬場景的對象。<br/><strong>●<a href="https://www.coppeliarobotics.com/helpFiles/en/paths.htm">Paths</a></strong>: a path is an object that defines a path or trajectory in space. It can be used for various purposes, also as a customized joint or actuator.<br/>路徑：路徑是在空間中定義路徑或軌蹟的對象。 它可以用於各種目的，也可以用作定制的接頭或執行器。<br/><strong>●<a href="https://www.coppeliarobotics.com/helpFiles/en/octrees.htm">OC trees</a></strong>: an OC tree is a spacial partitioning data structure made up by voxels.<br/>OC樹：OC樹是由體素組成的空間分區數據結構。<br/><strong>●<a href="https://www.coppeliarobotics.com/helpFiles/en/pointClouds.htm">Point clouds</a></strong>: a point cloud is an OC tree structure that contains points.<br/>點雲：點雲是包含點的OC樹結構。<br/>Some of above objects can have special properties allowing other objects or calculation modules to interact with them. Objects can be:<br/>以上某些物件可以具有特殊的屬性，從而允許其他物件或計算模塊與它們進行交互。物件可以是：<br/>●<a href="https://www.coppeliarobotics.com/helpFiles/en/collidableObjects.htm">Collidable</a><strong> </strong>     可碰撞<br/><strong><span>●<a href="https://www.coppeliarobotics.com/helpFiles/en/measurableObjects.htm">Measurable</a></span>   </strong>可衡量的<br/><strong><span>●<a href="https://www.coppeliarobotics.com/helpFiles/en/detectableObjects.htm">Detectable</a></span></strong>     可檢測的<br/><strong><span>●<a href="https://www.coppeliarobotics.com/helpFiles/en/renderableObjects.htm">Renderable</a></span></strong>    可呈現<br/><strong><span>●<a href="https://www.coppeliarobotics.com/helpFiles/en/viewableObjects.htm">Viewable</a></span></strong>        可見的</p>
+<br />Entities << <a href='Entities.html'>Previous</a> <a href='Collections.html'>Next</a> >> Collections</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        </body></html>
+        

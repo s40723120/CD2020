@@ -79,24 +79,30 @@
 <h3>Using Numerical Optimization Methods</h3>
 <p><a href="https://cyberbotics.com/doc/guide/using-numerical-optimization-methods">使用數值優化方法</a></p>
 <p><span>數值優化</span></p>
-<ul>
-<li><a href="https://cyberbotics.com/doc/guide/using-numerical-optimization-methods#using-a-single-controller"><span>使用單個控制器</span></a></li>
-<li><a href="https://cyberbotics.com/doc/guide/using-numerical-optimization-methods#using-two-distinct-types-of-controllers"><span>使用兩種不同類型的控制器</span></a></li>
-</ul>
+<p><a href="https://cyberbotics.com/doc/guide/using-numerical-optimization-methods#using-a-single-controller"><span>使用單個控制器</span></a></p>
+<p><a href="https://cyberbotics.com/doc/guide/using-numerical-optimization-methods#using-two-distinct-types-of-controllers"><span>使用兩種不同類型的控制器</span></a></p>
 <p><span>使用優化算法時，您可能需要在每次適應性評估之後或之前重置機器人。<span>有幾種重置機器人的方法:</span></span></p>
-<ul>
-<li><a href="https://cyberbotics.com/doc/guide/using-numerical-optimization-methods#using-the-wb_supervisor_field_set_-and-wb_supervisor_simulation_reset_physics-functions"><span>使用wb_supervisor_field_set_ *和wb_supervisor_simulation_reset_physics函數</span></a></li>
-<li><a href="https://cyberbotics.com/doc/guide/using-numerical-optimization-methods#using-the-wb_supervisor_world_reload-function"><span>使用wb_supervisor_world_reload函數</span></a></li>
-<li><a href="https://cyberbotics.com/doc/guide/using-numerical-optimization-methods#using-the-wb_supervisor_world_reset-function"><span>使用wb_supervisor_world_reset函數</span></a></li>
-<li><a href="https://cyberbotics.com/doc/guide/using-numerical-optimization-methods#by-starting-and-quitting-webots"><span>通過啟動和退出Webots</span></a></li>
-</ul>
+<p><a href="https://cyberbotics.com/doc/guide/using-numerical-optimization-methods#using-the-wb_supervisor_field_set_-and-wb_supervisor_simulation_reset_physics-functions"><span>使用wb_supervisor_field_set_ *和wb_supervisor_simulation_reset_physics函數</span></a></p>
+<p><a href="https://cyberbotics.com/doc/guide/using-numerical-optimization-methods#using-the-wb_supervisor_world_reload-function"><span>使用wb_supervisor_world_reload函數</span></a></p>
+<p><a href="https://cyberbotics.com/doc/guide/using-numerical-optimization-methods#using-the-wb_supervisor_world_reset-function"><span>使用wb_supervisor_world_reset函數</span></a></p>
+<p><a href="https://cyberbotics.com/doc/guide/using-numerical-optimization-methods#by-starting-and-quitting-webots"><span>通過啟動和退出Webots</span></a></p>
 <p><span></span></p>
 <h3 class="anchor-header" id="cjavapython" name="cpjavapython">C++、Java、Python</h3>
-<p></p>
+<p><span>本節說明C API與C ++ / Java / Python API之間的主要區別。</span></p>
+<p><span><span>Java和Python API是使用SWIG從C ++ API自動生成的。</span><span>因此，在這三種語言中，類和方法的名稱以及參數的數量及其類型非常相似。</span></span></p>
+<p><a href="https://cyberbotics.com/doc/guide/cpp-java-python#cp-example"><span>C ++示例</span></a></p>
+<p><a href="https://cyberbotics.com/doc/guide/cpp-java-python#java-example"><span>Java示例</span></a></p>
+<p><a href="https://cyberbotics.com/doc/guide/cpp-java-python#python-example"><span>Python範例</span></a></p>
 <h3 class="anchor-header" id="matlab" name="matlab">MATLAB</h3>
-<p></p>
+<p><a href="https://cyberbotics.com/doc/guide/matlab">MATLAB</a></p>
+<p><span>用於Webot<span> </span>的</span><em><span><span>MATLAB<span> </span></span></span></em><span><span><span> </span>API與C API非常相似。</span><span>函數名稱相同，在某些情況下僅參數的類型和數量略有不同。</span><span>《 Webots<span> </span></span></span><a href="https://cyberbotics.com/doc/reference/index"><span><span>參考手冊》</span></span></a><span><span>中介紹了MATLAB函數和原型</span><span>。</span><span>請注意，與C API不同，</span><span>MATLAB API<span> </span></span><span>中沒有</span></span><code>wb_robot_init</code><span><span>和</span></span><code>wb_robot_cleanup</code><span><span>函數。</span><span>在輸入控制器代碼之前和之後，分別自動進行必要的初始化和清除。</span></span></p>
 <h3 class="anchor-header" id="controllerplugin" name="controller-plugin">Controller Plugin</h3>
-<p></p>
+<p><a href="https://cyberbotics.com/doc/guide/controller-plugin">控制器插件</a></p>
+<p><span>控制器功能可以通過用戶實現的插件進行擴展。控制器插件的目的是簡化機器人特定的機器人窗口和遠程控制包裝程序的編程。</span></p>
+<p><span>對控制器插件進行編程而不是直接在控制器中進行編程更加方便，因為它大大提高了代碼的模塊化和可伸縮性。</span><span>例如，一個機器人窗口可以用於多個機器人。</span></p>
+<p><a href="https://cyberbotics.com/doc/guide/controller-plugin#fundamentals"><span>基本原理</span></a></p>
+<p><a href="https://cyberbotics.com/doc/guide/controller-plugin#robot-window"><span>機器人窗口</span></a></p>
+<p><a href="https://cyberbotics.com/doc/guide/controller-plugin#remote-control-plugin"><span>遠程控制插件</span></a></p>
 <h3 class="anchor-header" id="webotsplugin" name="webots-plugin">Webots Plugin</h3>
 <p></p>
 <h2 class="anchor-header" id="webinterface" name="web-interface">Web Interface</h2>

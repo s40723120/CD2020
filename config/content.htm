@@ -77,7 +77,20 @@
 <p>介紹Supervisor指令的獨特之處，<span>wb_supervisor_*</span><span>可以被用來控制所述模擬處理和修改場景樹，例如可以代替人工操作，測量機器人行進的距離或將其移回其初始位置等‧‧‧也可以用於拍攝屏幕快照或模擬視頻，重新啟動或可以終止仿真等。它可以讀取或修改“場景樹”中每個字段的值，例如讀取或更改機器人的位置，對象的顏色或打開或關閉光源，以及執行許多其他有用的操作。</span></p>
 <p>內有追蹤機器人路徑與設定機器人位置的範例</p>
 <h3>Using Numerical Optimization Methods</h3>
-<p></p>
+<p><a href="https://cyberbotics.com/doc/guide/using-numerical-optimization-methods">使用數值優化方法</a></p>
+<p><span>數值優化</span></p>
+<ul>
+<li><a href="https://cyberbotics.com/doc/guide/using-numerical-optimization-methods#using-a-single-controller"><span>使用單個控制器</span></a></li>
+<li><a href="https://cyberbotics.com/doc/guide/using-numerical-optimization-methods#using-two-distinct-types-of-controllers"><span>使用兩種不同類型的控制器</span></a></li>
+</ul>
+<p><span>使用優化算法時，您可能需要在每次適應性評估之後或之前重置機器人。<span>有幾種重置機器人的方法:</span></span></p>
+<ul>
+<li><a href="https://cyberbotics.com/doc/guide/using-numerical-optimization-methods#using-the-wb_supervisor_field_set_-and-wb_supervisor_simulation_reset_physics-functions"><span>使用wb_supervisor_field_set_ *和wb_supervisor_simulation_reset_physics函數</span></a></li>
+<li><a href="https://cyberbotics.com/doc/guide/using-numerical-optimization-methods#using-the-wb_supervisor_world_reload-function"><span>使用wb_supervisor_world_reload函數</span></a></li>
+<li><a href="https://cyberbotics.com/doc/guide/using-numerical-optimization-methods#using-the-wb_supervisor_world_reset-function"><span>使用wb_supervisor_world_reset函數</span></a></li>
+<li><a href="https://cyberbotics.com/doc/guide/using-numerical-optimization-methods#by-starting-and-quitting-webots"><span>通過啟動和退出Webots</span></a></li>
+</ul>
+<p><span></span></p>
 <h3 class="anchor-header" id="cjavapython" name="cpjavapython">C++、Java、Python</h3>
 <p></p>
 <h3 class="anchor-header" id="matlab" name="matlab">MATLAB</h3>

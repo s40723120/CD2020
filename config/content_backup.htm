@@ -13,11 +13,11 @@
 <p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
 <p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
 <p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
-<h1><strong>每周進度</strong></h1>
-<h2><strong>Week1</strong></h2>
+<h1>每周進度</h1>
+<h2>Week1</h2>
 <p><b>建立倉儲git clone後</b></p>
 <p><span>在小黑窗輸入git submodule add <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a></span></p>
-<h2><strong>Week2</strong></h2>
+<h2>Week2</h2>
 <p>Python升級到3.8.2</p>
 <p>到<a href="https://www.python.org/downloads/release/python-382/">https://www.python.org/downloads/release/python-382/</a>下載安裝檔</p>
 <p>把pip取消勾選</p>
@@ -32,52 +32,138 @@
 <p><span>pip install </span>pelican</p>
 <p><span>pip install </span>leo</p>
 <p>這些python3.8.2缺少的模組給安裝下來</p>
-<h2><strong>Week3</strong></h2>
+<h2>Week3</h2>
 <p>閱讀電子書<a href="https://www.coppeliarobotics.com/helpFiles/index.html">https://www.coppeliarobotics.com/helpFiles/index.html</a></p>
 <p>從中了解關於Coppeliasim的功能</p>
 <p>Coppeliasim有非常完善的物理仿真<span>引擎、支持多種類型機器人。還有許多額外的物件可以導入包</span><span lang="zh-TW">含完整的運動學計算器，路徑規劃，嵌入式圖像處理的視覺傳感器。</span><span lang="zh-TW">可以通過Solidwork，AutoCAD之類的三維繪圖軟件符合需求的模型，再轉換成stl文件導入即可。</span></p>
 <p><span>Coppeliasim支持的程式語言有C++.Python.Java.Lua.Matlab.Octave。</span></p>
-<h2><strong>Week4</strong></h2>
-<h2><strong>Week5</strong></h2>
-<h2><strong>Week6</strong></h2>
-<h2><strong>Week7</strong></h2>
+<h2>Week4</h2>
+<p><b>了解如何解決無法提工長期服務</b></p>
+<h2>Week5</h2>
+<p><strong>清明連假</strong></p>
+<h2>Week6</h2>
 <p>閱讀電子書:<a href="https://cyberbotics.com/doc/guide/foreword">https://cyberbotics.com/doc/guide/foreword</a></p>
 <p>從中了解關於Webots的使用方式，以及從中了解從0開始製作一台4輪車所需的功能和知識，</p>
 <p><span>Webots是一個開源的三維移動機器人模擬器，它提供了快速的原型製作環境，使用戶可以創建具有物理特性的虛擬場景。</span></p>
 <p><span><span>它最初是作為研究工具開發的，用於研究移動機器人中的各種控制算法。</span></span></p>
 <p>Webots可使用<span>C、C ++，Java，Python或MATLAB編程。</span></p>
-<h2><strong>Week8</strong></h2>
+<p><strong style="font-size: 30px;">Week7</strong></p>
+<p>閱讀電子書:<a href="https://cyberbotics.com/doc/guide/foreword">https://cyberbotics.com/doc/guide/foreword</a></p>
+<p>並開使學習使用Webot</p>
+<p><span></span></p>
+<h2>Week8</h2>
+<p>上課直播抽查</p>
+<p>group 1:40723123<br/>group 1:40723153<br/>group 1:40723140<br/>group 1:40723114</p>
+<p>group 2:40723137<br/>group 2:40723141<br/>group 2:40723147<br/>group 2:40623143</p>
+<p>group 3:40723130<br/>group 3:40723110<br/>group 3:40723142<br/>group 3:40723125</p>
+<p>group 4:40723102<br/>group 4:40723101<br/>group 4:40723119<br/>group 4:40723138</p>
+<p><span>此周了解cd2020pj 的網際程式設計，以及之後用於coppeliasim四輪車的remoteAPI 網際控制。</span></p>
+<h2>Week12</h2>
+<p>Virtualbox設定網路</p>
+<p>為了抓出DHCP的IP所以下面指令</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">ifconfig</pre>
+<p><img alt="" height="376" src="/images/ifconfig.png" width="435"/></p>
+<p>上面顯示沒有安裝<span>net-tools，所以打</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sudo apt install net-tools</pre>
+<p><img alt="" height="414" src="/images/sudo1.png" width="481"/></p>
+<p>出現網路錯誤 之後查詢網路設定</p>
+<p>先到<span>/etc/netplan目錄下</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">cd /etc/netplan</pre>
+<p>然後檢查<span> 00-installer-config.yaml 檔案內的設定</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sudo vi 00-installer-config.yaml</pre>
+<p><img alt="" height="393" src="/images/cd sudo2.png" width="457"/></p>
+<p><span>00-installer-config.yaml內容</span><span></span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false"># This is the network config written by 'subiquity'
+network:
+    ethernets:
+        enpes3:
+            dhcp4: true
+            dhcp6: true
+            nameservers:
+                addresses:
+                    - 2001:b000:168::1
+    version: 2</pre>
+<p><img alt="" height="430" src="/images/suddo2.png" width="493"/></p>
+<div>遍輯完後按ESC打:wq退出，之後<span>更新netplan設定</span></div>
+<div><span></span></div>
+<div>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sudo netplan apply</pre>
+<p><img alt="" height="428" src="/images/sudo3.png" width="502"/></p>
+<p>之後到<span>/etc/apt/apt.conf.d 目錄下檢查有沒有proxy.conf檔案(通常沒有</span><span>)</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">cd /etc/apt/apt.conf.d</pre>
 <p></p>
-<h1>Coppeliasim</h1>
+<p>新增<span>proxy.conf</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sudo vi proxy.conf</pre>
+<p>proxy.conf的檔案內容</p>
+<p><img alt="" height="385" src="/images/sudo4.png" width="445"/></p>
+<div>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">Acquire::http::proxy "http://[2001:288:6004:17::填port號]:3128";
+</pre>
+<p></p>
+<p>到Porxy查詢port號</p>
+<p><img alt="" height="42" src="/images/port.png" width="180"/></p>
+</div>
+</div>
+<div><img alt="" height="434" src="/images/Annotation 2020-06-17 085655.png" width="502"/></div>
+<div></div>
+<div>打完後更新apt</div>
+<div>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sudo apt update</pre>
+<p><img alt="" height="347" src="/images/update.png" width="499"/><br/><br/></p>
+<p>之後就可以下</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sudo apt install net-tools</pre>
+<p><img alt="" height="424" src="/images/install.png" width="503"/></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">ifconfig</pre>
+<p><img alt="" height="441" src="/images/ifconfig-2.png" width="513"/></p>
+<p>上面找出 fe80:a00:27ff:fef6:9b8a 是我的Guest IP</p>
+</div>
+<div></div><h2>Week13</h2>
+<h4>Setting VirtualBox Network</h4>
+<p><img alt="" height="261" src="/images/Annotation 2020-06-17 083901.png" width="311"/></p>
+<p>點選port forwarding</p>
+<p><img alt="" height="335" src="/images/net.png" width="531"/></p>
+<p></p>
+<p>Host IP打上老師規定的</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">2001:288:6004:17:2020:1::7101/64
+ 
+2001:288:6006:17 為機械設計系網段
+                            2020 為年份
+                            1 為 cda, 2 為 cdb, 3 為 wcm, 4 為 wcmj
+                            71 為 407231 表示甲班, 72 為乙班
+                            01 則為該班學號</pre>
+<p>Guest IP是ifconfig查詢出來的</p>
+<p><img alt="" height="468" src="/images/IP.png" width="674"/></p>
+<p></p>
+<p></p><h1>Coppeliasim</h1>
 <p><a>CoppeliaSim</a>高度可定制的模擬器，可以自定義模擬的每個方面。此外對於機器人學習者可以大大降低學習成本。</p>
 <p>機器人設計工具可以透過v-rep裡的模擬平台，加入相關引擎、物理碰撞等旋轉功能。</p>
 <p>v-rep是一款靈活、可拓展的通用機器人模擬器，支持六種不同的編程或編碼方法，每種方法都具有相對於其他方法的特殊優點（顯然還有缺點），但所有六種方法都是相互兼容的（即可以同時使用，甚至可以協同使用）。</p>
 <p>這可以通過精心設計的應用程序編程接口（API）來實現。</p>
 <h2>Entities</h2>
 <p><strong>Entities 實體</strong><br/><span>An entity is a term that refers to a scene object or a collection.</span><br/><span>實體是指</span><strong>場景物件</strong><span>或</span><strong>集合體</strong><span>的專業術語</span></p>
-<h3><span>Scene objects</span></h3>
+<h3>Scene objects</h3>
 <p><strong><a href="https://www.coppeliarobotics.com/helpFiles/index.html">Scene objects</a><span> </span>場景物件</strong><br/>The main elements in CoppeliaSim that are used for building a simulation scene are scene objects (objects in short).<br/>CoppeliaSim中用於構建模擬場景的主要元素是場景物件（簡而言之）<br/>Objects are visible in the scene hierarchy and in the scene view.<br/>物件在場景層次結構和場景視圖中可見。<br/>In the scene view, objects have a three dimensional representation as illustrated in following figure:<br/>在物件視圖中，物件具有三維表示，如下圖所示：<br/>Following list gives a brief functional description of each object type:<br/>以下列表簡要介紹了每種物件類型的功能：</p>
 <p><strong>●<a href="https://www.coppeliarobotics.com/helpFiles/en/shapes.htm">Shapes</a></strong>: a shape is a rigid mesh that is composed of triangular faces.<br/>形狀：形狀是由三角形面組成的剛性網格。<br/><strong>●<a href="https://www.coppeliarobotics.com/helpFiles/en/joints.htm">Joints</a></strong>: a joint object is a joint or actuator. Four types are supported: revolute joints, prismatic joints, screws and spherical joints.<br/>關節：關節物件是關節或執行器。四種類型支持架：旋轉接頭，棱柱接頭，螺釘和球形接頭。<br/><strong>●<a href="https://www.coppeliarobotics.com/helpFiles/en/graphs.htm">Graphs</a></strong>: a graph is used to record and visualize simulation data.<br/>圖形：圖形用於記錄和可視化模擬數據。<br/><strong>●<a href="https://www.coppeliarobotics.com/helpFiles/en/dummies.htm">Dummies</a></strong>: a dummy is a point with orientation. Dummies are multipurpose objects that can have many different applications.<br/>假人：假人是具有定向的點。假人是可以具有許多不同應用程序的多用途對象。<br/><strong>●<a href="https://www.coppeliarobotics.com/helpFiles/en/proximitySensors.htm">Proximity sensor</a></strong><a href="https://www.coppeliarobotics.com/helpFiles/en/proximitySensors.htm">s</a>: a proximity sensor detects objects in a geometrically exact fashion within its detection volume. CoppeliaSim supports pyramid-, cylinder-, disk-, cone- and ray-type proximity sensors.<br/>接近傳感器：接近傳感器以幾何精確的方式在其檢測範圍內檢測物體。 CoppeliaSim支持金字塔型，圓柱型，圓盤型，圓錐型和射線型接近傳感器。<br/><strong>●<a href="https://www.coppeliarobotics.com/helpFiles/en/visionSensors.htm">Vision sensors</a></strong>: a vision sensor is a camera-type sensor, reacting to light, colors and images.<br/>視覺傳感器：視覺傳感器是一種相機型傳感器，對光線，顏色和圖像有反應。<br/><strong>●<a href="https://www.coppeliarobotics.com/helpFiles/en/forceSensors.htm">Force sensors</a></strong>: a force sensor is an object able to measure forces and torques that are applied to it. It also has the ability to break if a given threashold is overshot.<br/>力傳感器：力傳感器是能夠測量施加到其上的力和扭矩的對象。 如果給定的閾值被超出，它也具有打破的能力。<br/><strong>●<a href="https://www.coppeliarobotics.com/helpFiles/en/cameras.htm">Cameras</a></strong>: a camera is an object that allows seeing the simulation scene from various view points.<br/>攝影機：攝影機是一個可以從各個角度查看模擬場景的對象。<br/><strong>●<a href="https://www.coppeliarobotics.com/helpFiles/en/lights.htm">Lights</a></strong>: a light is an object that allows illuminating the simulation scene.<br/>燈光：燈光是一個可以照亮模擬場景的對象。<br/><strong>●<a href="https://www.coppeliarobotics.com/helpFiles/en/paths.htm">Paths</a></strong>: a path is an object that defines a path or trajectory in space. It can be used for various purposes, also as a customized joint or actuator.<br/>路徑：路徑是在空間中定義路徑或軌蹟的對象。 它可以用於各種目的，也可以用作定制的接頭或執行器。<br/><strong>●<a href="https://www.coppeliarobotics.com/helpFiles/en/octrees.htm">OC trees</a></strong>: an OC tree is a spacial partitioning data structure made up by voxels.<br/>OC樹：OC樹是由體素組成的空間分區數據結構。<br/><strong>●<a href="https://www.coppeliarobotics.com/helpFiles/en/pointClouds.htm">Point clouds</a></strong>: a point cloud is an OC tree structure that contains points.<br/>點雲：點雲是包含點的OC樹結構。<br/>Some of above objects can have special properties allowing other objects or calculation modules to interact with them. Objects can be:<br/>以上某些物件可以具有特殊的屬性，從而允許其他物件或計算模塊與它們進行交互。物件可以是：<br/>●<a href="https://www.coppeliarobotics.com/helpFiles/en/collidableObjects.htm">Collidable</a><strong> </strong>     可碰撞<br/><strong><span>●<a href="https://www.coppeliarobotics.com/helpFiles/en/measurableObjects.htm">Measurable</a></span>   </strong>可衡量的<br/><strong><span>●<a href="https://www.coppeliarobotics.com/helpFiles/en/detectableObjects.htm">Detectable</a></span></strong>     可檢測的<br/><strong><span>●<a href="https://www.coppeliarobotics.com/helpFiles/en/renderableObjects.htm">Renderable</a></span></strong>    可呈現<br/><strong><span>●<a href="https://www.coppeliarobotics.com/helpFiles/en/viewableObjects.htm">Viewable</a></span></strong>        可見的</p>
 <h3>Collections</h3>
 <p><strong><a href="https://www.coppeliarobotics.com/helpFiles/index.html">Collections</a><span> </span>集合</strong><br/><span>A collection is a user-defined collection of scene objects.</span><br/><span>集合是場景物件的用戶定義集合。</span><br/><span>A collection has to contain at least one object and is considered to be an entity (objects are also entities)</span><br/><span>集合必須包含至少一個物件，並且被認為是一個實體（物件也是實體）。</span><br/><span>Collections are useful when referring to several objects like a robot for instance</span><br/><span>當引用多個物件（例如機器人）時，集合很有用</span><br/><span>CoppeliaSim supports calculations based not only on objects, but also on collections</span><br/><span>CoppeliaSim支持不僅基於物件而且還基於集合的計算</span><br/><span>For instance the collision detection module allows registering following collision pair(collection A; object B</span><br/><span>例如，碰撞檢測模塊允許註冊以下碰撞(集合A；物件B)</span><br/><span>The collision checking algorithm will then check whether the collection A (any object composing it) collides with object B.</span><br/><span>然後，碰撞檢查算法將檢查集合A（組成它的任何對象）是否與物件B碰撞。</span><br/><span>Collections are collidable, measurable, detectable and renderable entities.</span><br/><span>集合是可碰撞，可測量，可檢測和可渲染的實體。</span></p>
-<h2><span>Calculation modules</span></h2>
+<h2>Calculation modules</h2>
 <p>CoppeliaSim offers powerful calculation functionalities or calculation modules<br/>CoppeliaSim提供強大的計算功能或計算模塊<br/>that are not directly encapsulated in objects(like proximity sensors or vision sensors for instance)<br/>沒有直接封裝在物件中(例如接近傳感器或視覺傳感器)<br/>but that rather operate on one or several objects.<br/>而是對一個或幾個物件進行操作。<br/>Calculation modules include:<br/>計算模塊包括：<br/><strong>●<a href="https://www.coppeliarobotics.com/helpFiles/en/collisionDetection.htm">the collision detection module</a></strong><br/>碰撞檢測模塊<br/><strong>●<a href="https://www.coppeliarobotics.com/helpFiles/en/distanceCalculation.htm">the minimum distance calculation module</a></strong><br/>最小距離計算模塊<br/><strong>●<a href="https://www.coppeliarobotics.com/helpFiles/en/inverseKinematicsModule.htm">the inverse kinematics calculation module</a></strong><br/>逆運動學計算模塊<br/><strong>●<a href="https://www.coppeliarobotics.com/helpFiles/en/dynamicsModule.htm">the dynamics module</a></strong><br/>動力學模塊<br/>Other, similar functionality, might be offered via a plugin, as was done with the path/motion planning plugin for instance.<br/>其他類似功能也可以通過插件提供，例如使用路徑/運動計劃插件。<br/>Some calculation module allow registering calculation objects that are user defined. Calculation objects are different from scene objects, but are indirectly linked to them by operating on them. This means that calculation objects cannot exist by themselves:<br/>一些計算模塊允許註冊用戶定義的計算物件。計算物件不同於場景物件，但是通過對其進行操作而間接鏈接到它們。 這意味著計算物件本身不能存在：<br/>Collision detection objects (or collision objects) rely on collidable objects.<br/>Minimum distance calculation objects (or distance objects) rely on measurable objects.<br/>Inverse kinematics calculation objects (or IK groups) rely mainly on dummies and kinematic chains, where joint objects play a central role.<br/>碰撞檢測對象（或碰撞對象）依賴於可碰撞對象。<br/>最小距離計算對象（或距離對象）依賴於可測量的對象。<br/>逆運動學計算對象（或IK組）主要依賴於虛擬對象和運動鏈，其中關節對象起著核心作用。</p>
 <h2>Writing code</h2>
 <p>CoppeliaSim is a highly customizable simulator: every aspect of a simulation can be customized<br/>CoppeliaSim是高度可定制的模擬器：可以自定義模擬的每個方面。<br/>Moreover, the simulator itself can be customized and tailored so as to behave exactly as desired.<br/>此外，模擬器本身可以進行定制和定制，以使其性能完全符合要求。<br/>This is allowed through an elaborate Application Programming Interface (API).<br/>這可以通過精心設計的應用程序編程接口（API）來實現。<br/>Six different programming or coding approaches are supported,<br/>支持六種不同的編程或編碼方法，<br/>each having particular advantages (and obviously also disadvantages) over the others<br/>每個都比其他的具有特殊的優勢（顯然也有劣勢）<br/>but all six are mutually compatible (i.e. can be used at the same time, or even hand-in-hand)<br/>但所有六種方法都是相互兼容的（即可以同時使用，甚至可以穿插使用）。<br/>The control entity of a model, scene, or the simulator itself can be located inside:<br/>模型，場景或模擬器本身的控制實體可以位於以下位置：</p>
 <p><br/><strong>●<a href="https://www.coppeliarobotics.com/helpFiles/en/scripts.htm">embedded scrip</a></strong><a href="https://www.coppeliarobotics.com/helpFiles/en/scripts.htm">t</a>     嵌入式腳本<br/><strong>●<a href="https://www.coppeliarobotics.com/helpFiles/en/addOns.htm">an add-on </a><span> </span>              </strong>附加組件<br/><strong>●<a href="https://www.coppeliarobotics.com/helpFiles/en/plugins.htm">a plugin</a><span> </span>                  </strong>插件<br/><strong>●<a href="https://www.coppeliarobotics.com/helpFiles/en/remoteApiOverview.htm">remote API client</a><span> </span>  </strong>遠程API客戶端<br/><strong>●<a href="https://www.coppeliarobotics.com/helpFiles/en/rosInterfaces.htm">ROS node</a></strong><br/><strong>●<a href="https://www.coppeliarobotics.com/helpFiles/en/blueZeroPlugin.htm">BlueZero node</a></strong></p>
-<h1><b>Webots</b></h1>
+<h1>Webots</h1>
 <p>webots相關資料<a href="https://cyberbotics.com/doc/guide/development-environments">https://cyberbotics.com/doc/guide/development-environments</a></p>
 <p>webot載點</p>
 <p><a href="https://drive.google.com/a/gm.nfu.edu.tw/uc?id=1MolDH7kKJt_IIBTrKalsMfNWMrqqTWdt&amp;export=download">可攜版本</a></p>
 <p><a href="https://cyberbotics.com/">電腦版本</a></p>
-<h2 class="anchor-header" id="programmingfundamentals" name="programming-fundamentals">Programming Fundamentals</h2>
+<h2>Programming Fundamentals</h2>
 <p><a href="https://cyberbotics.com/doc/guide/programming-fundamentals">編程基礎</a></p>
 <p><span>本章介紹使用Webots編程的基本概念。Webots控制器可以用C / C ++，Java，Python或</span><em><span><span>MATLAB<span> </span></span></span></em><sup><span><span>TM</span></span></sup><span><span>編寫。</span></span></p>
 <p><span></span></p>
-<h3 class="anchor-header" id="controllerprogramming" name="controller-programming">Controller Programming</h3>
+<h3>Controller Programming</h3>
 <p><a href="https://cyberbotics.com/doc/guide/controller-programming">控制器編程</a></p>
 <p>主要介紹關於輸出、讀取、控制等程式碼的使用方式以及編寫例子。</p>
-<h3 class="anchor-header" id="supervisorprogramming" name="supervisor-programming">Supervisor Programming</h3>
+<h3>Supervisor Programming</h3>
 <p><a href="https://cyberbotics.com/doc/guide/supervisor-programming">Supervisor編程</a></p>
 <p>介紹Supervisor指令的獨特之處，<span>wb_supervisor_*</span><span>可以被用來控制所述模擬處理和修改場景樹，例如可以代替人工操作，測量機器人行進的距離或將其移回其初始位置等‧‧‧也可以用於拍攝屏幕快照或模擬視頻，重新啟動或可以終止仿真等。它可以讀取或修改“場景樹”中每個字段的值，例如讀取或更改機器人的位置，對象的顏色或打開或關閉光源，以及執行許多其他有用的操作。</span></p>
 <p>內有追蹤機器人路徑與設定機器人位置的範例</p>
@@ -92,44 +178,44 @@
 <p><a href="https://cyberbotics.com/doc/guide/using-numerical-optimization-methods#using-the-wb_supervisor_world_reset-function"><span>使用wb_supervisor_world_reset函數</span></a></p>
 <p><a href="https://cyberbotics.com/doc/guide/using-numerical-optimization-methods#by-starting-and-quitting-webots"><span>通過啟動和退出Webots</span></a></p>
 <p><span></span></p>
-<h3 class="anchor-header" id="cjavapython" name="cpjavapython">C++、Java、Python</h3>
+<h3>C++、Java、Python</h3>
 <p><span>本節說明C API與C ++ / Java / Python API之間的主要區別。</span></p>
 <p><span><span>Java和Python API是使用SWIG從C ++ API自動生成的。</span><span>因此，在這三種語言中，類和方法的名稱以及參數的數量及其類型非常相似。</span></span></p>
 <p><a href="https://cyberbotics.com/doc/guide/cpp-java-python#cp-example"><span>C ++示例</span></a></p>
 <p><a href="https://cyberbotics.com/doc/guide/cpp-java-python#java-example"><span>Java示例</span></a></p>
 <p><a href="https://cyberbotics.com/doc/guide/cpp-java-python#python-example"><span>Python範例</span></a></p>
-<h3 class="anchor-header" id="matlab" name="matlab">MATLAB</h3>
+<h3>MATLAB</h3>
 <p><a href="https://cyberbotics.com/doc/guide/matlab">MATLAB</a></p>
 <p><span>用於Webot<span> </span>的</span><em><span><span>MATLAB<span> </span></span></span></em><span><span><span> </span>API與C API非常相似。</span><span>函數名稱相同，在某些情況下僅參數的類型和數量略有不同。</span><span>《 Webots<span> </span></span></span><a href="https://cyberbotics.com/doc/reference/index"><span><span>參考手冊》</span></span></a><span><span>中介紹了MATLAB函數和原型</span><span>。</span><span>請注意，與C API不同，</span><span>MATLAB API<span> </span></span><span>中沒有</span></span><code>wb_robot_init</code><span><span>和</span></span><code>wb_robot_cleanup</code><span><span>函數。</span><span>在輸入控制器代碼之前和之後，分別自動進行必要的初始化和清除。</span></span></p>
-<h3 class="anchor-header" id="controllerplugin" name="controller-plugin">Controller Plugin</h3>
+<h3>Controller Plugin</h3>
 <p><a href="https://cyberbotics.com/doc/guide/controller-plugin">控制器插件</a></p>
 <p><span>控制器功能可以通過用戶實現的插件進行擴展。控制器插件的目的是簡化機器人特定的機器人窗口和遠程控制包裝程序的編程。</span></p>
 <p><span>對控制器插件進行編程而不是直接在控制器中進行編程更加方便，因為它大大提高了代碼的模塊化和可伸縮性。</span><span>例如，一個機器人窗口可以用於多個機器人。</span></p>
 <p><a href="https://cyberbotics.com/doc/guide/controller-plugin#fundamentals"><span>基本原理</span></a></p>
 <p><a href="https://cyberbotics.com/doc/guide/controller-plugin#robot-window"><span>機器人窗口</span></a></p>
 <p><a href="https://cyberbotics.com/doc/guide/controller-plugin#remote-control-plugin"><span>遠程控制插件</span></a></p>
-<h3 class="anchor-header" id="webotsplugin" name="webots-plugin">Webots Plugin</h3>
+<h3>Webots Plugin</h3>
 <p><a href="https://cyberbotics.com/doc/guide/webots-plugin">Webots插件</a></p>
 <p><span>Webots可以通過用戶的插件進行功能擴展。</span></p>
 <p><span><span>一個</span><em><span><span>物理</span></span></em><span><span>插件報價添加自定義ODE指令Webots的默認物理行為的可能性。</span><span>例如，可以增加或測量力。</span><span>加力時，可以模擬新型的環境或設備。</span><span>例如，可以將風模擬為施加到世界上每個對象的恆定單向力，並與該對象的大小成比例。</span><span>飛機的反應堆可以通過添加變化強度等來模擬。</span></span></span></p>
-<h2 class="anchor-header" id="webinterface" name="web-interface">Web Interface</h2>
+<h2>Web Interface</h2>
 <p><a href="https://cyberbotics.com/doc/guide/web-interface">網頁界面</a></p>
 <p><span>本章介紹如何導出為X3D格式和網頁。</span></p>
-<h3 class="anchor-header" id="x3dandwebscene" name="x3d-and-web-scene">X3D and Web Scene</h3>
+<h3>X3D and Web Scene</h3>
 <p><a href="https://cyberbotics.com/doc/guide/web-scene">X3D和Web場景</a></p>
 <p><code>X3D</code><span><span>是一種現代</span></span><code>XML</code><span><span>的文件格式，用於表示3D計算機圖形。</span><span>可以將其導入許多3D建模或可視化應用程序中。可以在任何最新的Web瀏覽器中打開它，可使用鼠標或觸摸屏在播放器中進行3D導航。</span></span></p>
 <p><span><span><a href="https://cyberbotics.com/doc/guide/web-scene#how-to-export-a-web-scene"><span>如何導出Web場景</span></a></span></span></p>
 <p><span><span><a href="https://cyberbotics.com/doc/guide/web-scene#how-to-embed-a-web-scene-in-your-website"><span>如何在您的網站中嵌入Web場景</span></a></span></span></p>
 <p><span><span><a href="https://cyberbotics.com/doc/guide/web-scene#limitations"><span>局限性</span></a></span></span></p>
 <p><span><span><a href="https://cyberbotics.com/doc/guide/web-scene#remarks-on-the-used-technologies-and-their-limitations"><span>關於二手技術及其局限性的評論</span></a></span></span></p>
-<h3 class="anchor-header" id="webanimation" name="web-animation">Web Animation</h3>
+<h3>Web Animation</h3>
 <p><a href="https://cyberbotics.com/doc/guide/web-animation">網絡動畫</a></p>
 <p><span>Webot可以將模擬記錄到交互式3D </span><code>HTML</code><span><span>頁面。</span><span>結果類似於具有播放控件的電影，不同之處在於您可以隨時更改視點。</span></span></p>
 <p><span><span><a href="https://cyberbotics.com/doc/guide/web-animation#how-to-export-a-web-animation"><span>如何導出網絡動畫</span></a></span></span></p>
 <p><span><span><a href="https://cyberbotics.com/doc/guide/web-animation#limitations"><span>局限性</span></a></span></span></p>
 <p><span><span><a href="https://cyberbotics.com/doc/guide/web-animation#scene-refresh-rate"><span>場景刷新率</span></a></span></span></p>
 <p><span><span></span></span></p>
-<h3 class="anchor-header" id="webstreaming" name="web-streaming">Web Streaming</h3>
+<h3>Web Streaming</h3>
 <p><a href="https://cyberbotics.com/doc/guide/web-streaming">網絡串流媒體</a></p>
 <p><span>在此模式下，用戶可以觀看已經運行的仿真並進入場景，但不能與仿真交互，即控制仿真的執行並修改機器人控制器程序。</span></p>
 <p><span><a href="https://cyberbotics.com/doc/guide/web-streaming#how-to-stream-a-webots-simulation"><span>如何進行Webots模擬</span></a></span></p>
@@ -138,7 +224,7 @@
 <p><span><a href="https://cyberbotics.com/doc/guide/web-streaming#scene-refresh-rate"><span>場景刷新率</span></a></span></p>
 <p><span><a href="https://cyberbotics.com/doc/guide/web-streaming#limitations"><span>局限性</span></a></span></p>
 <p><span><a href="https://cyberbotics.com/doc/guide/web-streaming#technologies-and-limitations"><span>技術與局限性</span></a></span></p>
-<h3 class="anchor-header" id="websimulation" name="web-simulation">Web Simulation</h3>
+<h3>Web Simulation</h3>
 <p><strong><a href="https://cyberbotics.com/doc/guide/web-simulation">網絡模擬</a></strong></p>
 <p><span>這樣的系統可以分佈在幾台機器上。</span><span>一台機器運行一個會話服務器，該會話服務器與多個模擬服務器進行通信。</span><span>每台機器都運行一個模擬服務器實例，該實例從會話服務器接收請求，並為每個連接的客戶端實例化一個新的Webots實例，該實例直接與客戶端進行通信。</span></p>
 <p><a href="https://cyberbotics.com/doc/guide/web-simulation#streaming-server">流媒體服務器</a></p>
@@ -146,10 +232,10 @@
 <p><a href="https://cyberbotics.com/doc/guide/web-simulation#scene-refresh-rate"><span>場景刷新率</span></a></p>
 <p><a href="https://cyberbotics.com/doc/guide/web-simulation#limitations"><span>局限性</span></a></p>
 <p><a href="https://cyberbotics.com/doc/guide/web-simulation#technologies-and-limitations"><span>技術與局限性</span></a></p>
-<h2 class="anchor-header" id="tutorials" name="tutorials">Tutorials</h2>
+<h2>Tutorials</h2>
 <p><a href="https://cyberbotics.com/doc/guide/tutorials">講解</a></p>
 <p><span>本章的目的是解釋創建自己的模擬所需的Webot的基本概念。</span><span>學習的重點是機器人及其環境的建模以及機器人控制器的編程，</span><span>了解在何處可以找到文檔。</span></p>
-<h3 class="anchor-header" id="tutorial1yourfirstsimulationinwebots30minutes" name="tutorial-1-your-first-simulation-in-webots-30-minutes">Tutorial 1-Your First Simulation in Webots</h3>
+<h3>Tutorial 1-Your First Simulation in Webots</h3>
 <p><a href="https://cyberbotics.com/doc/guide/tutorial-1-your-first-simulation-in-webots">教程1：您第一次進行Webot模擬</a></p>
 <p><span>本教程的目的是使您熟悉用戶界面和Webots的基本概念。</span><span>您將創建第一個包含簡單環境的模擬：一個有地板和牆壁的競技場，幾個盒子，一個電子冰球機器人以及一個使機器人運動的控制器程序。</span></p>
 <p><a href="https://cyberbotics.com/doc/guide/tutorial-1-your-first-simulation-in-webots#start-webots">啟動Webots</a></p>
@@ -158,7 +244,7 @@
 <p><span><a href="https://cyberbotics.com/doc/guide/tutorial-1-your-first-simulation-in-webots#create-a-new-controller"><span>創建一個新的控制器</span></a></span></p>
 <p><span><a href="https://cyberbotics.com/doc/guide/tutorial-1-your-first-simulation-in-webots#extend-the-controller-to-speed-control"><span>將控制器擴展到速度控制</span></a></span></p>
 <p><span><a href="https://cyberbotics.com/doc/guide/tutorial-1-your-first-simulation-in-webots#conclusion"><span>結論</span></a></span></p>
-<h3 class="anchor-header" id="tutorial2modificationoftheenvironment30minutes" name="tutorial-2-modification-of-the-environment-30-minutes">Tutorial 2-Modification of the Environment</h3>
+<h3>Tutorial 2-Modification of the Environment</h3>
 <p><a href="https://cyberbotics.com/doc/guide/tutorial-2-modification-of-the-environment">教程2：修改環境</a></p>
 <p><span>在本教程中，我們將教您如何在環境中創建簡單物件。</span><span>第一步將是創建一個與環境互動的球。我們將處理與節點有關的幾個概念：它們的含義是什麼，如何創建它們，必須如何關聯它們，等等。此外，我們還將了解如何設置物理學。</span></p>
 <p><span><a href="https://cyberbotics.com/doc/guide/tutorial-2-modification-of-the-environment#a-new-simulation"><span>新的模擬</span></a></span></p>
@@ -171,7 +257,7 @@
 <p><span><a href="https://cyberbotics.com/doc/guide/tutorial-2-modification-of-the-environment#solution-world-file"><span>解決方案 World文件</span></a></span></p>
 <p><span><span><a href="https://cyberbotics.com/doc/guide/tutorial-2-modification-of-the-environment#efficiency"><span>效率</span></a></span></span></p>
 <p><span><span><a href="https://cyberbotics.com/doc/guide/tutorial-2-modification-of-the-environment#conclusion"><span>結論</span></a></span></span></p>
-<h3 class="anchor-header" id="tutorial3appearance20minutes" name="tutorial-3-appearance-20-minutes">Tutorial 3-Appearance</h3>
+<h3>Tutorial 3-Appearance</h3>
 <p><a href="https://cyberbotics.com/doc/guide/tutorial-3-appearance">教程3：外觀</a></p>
 <p><span>本教程的目的是使您熟悉與圖形渲染有關的一些節點。</span><span>當這些節點得到充分使用時，可以很快創建美觀的仿真。</span><span>良好的圖形質量不僅可以提高用戶的體驗，而且對於機器人感知其環境的模擬（相機圖像處理，行跟踪等）也至關重要。</span></p>
 <p><span><a href="https://cyberbotics.com/doc/guide/tutorial-3-appearance#new-simulation"><span>新模擬</span></a></span></p>
@@ -181,7 +267,7 @@
 <p><span><span><a href="https://cyberbotics.com/doc/guide/tutorial-3-appearance#rendering-options"><span>渲染選項</span></a></span></span></p>
 <p><span><span><a href="https://cyberbotics.com/doc/guide/tutorial-3-appearance#solution-world-file"><span>解決方案：World文件</span></a></span></span></p>
 <p><span><span><span><a href="https://cyberbotics.com/doc/guide/tutorial-3-appearance#conclusion"><span>結論</span></a></span></span></span></p>
-<h3 class="anchor-header" id="tutorial4moreaboutcontrollers30minutes" name="tutorial-4-more-about-controllers-30-minutes">Tutorial 4-More about Controllers</h3>
+<h3>Tutorial 4-More about Controllers</h3>
 <p><a href="https://cyberbotics.com/doc/guide/tutorial-4-more-about-controllers">教程4：有關控制器的更多信息</a></p>
 <p><span>我們將設計一個簡單的控制器，避免前面教程中創建的障礙。</span><span>本教程將向您介紹Webots中機器人編程的基礎。</span><span>在本章的最後，您應該了解場景樹節點和控制器API之間的鏈接是什麼，如何初始化和清理機器人控制器，如何初始化機器人設備，如何獲取傳感器值，如何命令執行器，以及如何編寫簡單的反饋迴路。</span></p>
 <p><a href="https://cyberbotics.com/doc/guide/tutorial-4-more-about-controllers#new-world-and-new-controller"><span>新世界和新控制者</span></a></p>
@@ -190,7 +276,7 @@
 <p><span><a href="https://cyberbotics.com/doc/guide/tutorial-4-more-about-controllers#the-controller-code"><span>控制器代碼</span></a></span></p>
 <p><span><a href="https://cyberbotics.com/doc/guide/tutorial-4-more-about-controllers#solution-world-file"><span>解決方案：World文件</span></a></span></p>
 <p><span><span><a href="https://cyberbotics.com/doc/guide/tutorial-4-more-about-controllers#conclusion"><span>結論</span></a></span></span></p>
-<h3 class="anchor-header" id="tutorial5compoundsolidandphysicsattributes15minutes" name="tutorial-5-compound-solid-and-physics-attributes-15-minutes">Tutorial 5-Compound Solid and Physics Attributes</h3>
+<h3>Tutorial 5-Compound Solid and Physics Attributes</h3>
 <p><a href="https://cyberbotics.com/doc/guide/tutorial-5-compound-solid-and-physics-attributes">教程5：複合固體和物理屬性</a></p>
 <p><span>本教程的目的是通過創建帶有多個邊界對象的實體來更詳細地探索物理模擬：一個由兩個球體和一個圓柱體組成的啞鈴。</span></p>
 <p><span><a href="https://cyberbotics.com/doc/guide/tutorial-5-compound-solid-and-physics-attributes#new-simulation"><span>新模擬</span></a></span></p>
@@ -203,7 +289,7 @@
 <p><span><span><a href="https://cyberbotics.com/doc/guide/tutorial-5-compound-solid-and-physics-attributes#minor-physics-parameters"><span>次要物理參數</span></a></span></span></p>
 <p><span><span><a href="https://cyberbotics.com/doc/guide/tutorial-5-compound-solid-and-physics-attributes#solution-world-file"><span>解決方案：World</span></a></span></span><span><span><a href="https://cyberbotics.com/doc/guide/tutorial-5-compound-solid-and-physics-attributes#solution-world-file"><span>文件</span></a></span></span></p>
 <p><span><span><span><a href="https://cyberbotics.com/doc/guide/tutorial-5-compound-solid-and-physics-attributes#conclusion"><span>結論</span></a></span></span></span></p>
-<h3 class="anchor-header" id="tutorial64wheelsrobot60minutes" name="tutorial-6-4-wheels-robot-60-minutes">Tutorial 6-4-Wheels Robot</h3>
+<h3>Tutorial 6-4-Wheels Robot</h3>
 <p><a href="https://cyberbotics.com/doc/guide/tutorial-6-4-wheels-robot">教程6：4輪機器人</a></p>
 <p><span>本教程的目的是從頭開始創建您的第一個機器人。</span><span>該機器人將由一個身體，四個輪子和兩個距離傳感器組成。</span></p>
 <p><span><a href="https://cyberbotics.com/doc/guide/tutorial-6-4-wheels-robot#new-simulation"><span>新模擬</span></a></span></p>
@@ -214,7 +300,7 @@
 <p><span><a href="https://cyberbotics.com/doc/guide/tutorial-6-4-wheels-robot#the-controller-code"><span>控制器代碼</span></a></span></p>
 <p><span><a href="https://cyberbotics.com/doc/guide/tutorial-6-4-wheels-robot#solution-world-file"><span>解決方案：World文件</span></a></span></p>
 <p><span><span><a href="https://cyberbotics.com/doc/guide/tutorial-6-4-wheels-robot#conclusion"><span>結論</span></a></span></span></p>
-<h3 class="anchor-header" id="tutorial7yourfirstproto20minutes" name="tutorial-7-your-first-proto-20-minutes">Tutorial 7-Your First PROTO</h3>
+<h3>Tutorial 7-Your First PROTO</h3>
 <p><a href="https://cyberbotics.com/doc/guide/tutorial-7-your-first-proto">教程7：您的第一個PROTO</a></p>
 <p><span>本教程的目的是創建一個與上一教程中的四輪機器人相對應的PROTO文件。</span></p>
 <p><span><a href="https://cyberbotics.com/doc/guide/tutorial-7-your-first-proto#copy-the-robot-definition"><span>複製機器人定義</span></a></span></p>
@@ -222,19 +308,19 @@
 <p><span><a href="https://cyberbotics.com/doc/guide/tutorial-7-your-first-proto#adding-fields"><span>新增欄位</span></a></span></p>
 <p><span><a href="https://cyberbotics.com/doc/guide/tutorial-7-your-first-proto#solution-proto-file"><span>解決方案：PROTO文件</span></a></span></p>
 <p><span><a href="https://cyberbotics.com/doc/guide/tutorial-7-your-first-proto#conclusion"><span>結論</span></a></span></p>
-<h3 class="anchor-header" id="tutorial8usingros60minutes" name="tutorial-8-using-ros-60-minutes">Tutorial 8-Using ROS</h3>
+<h3>Tutorial 8-Using ROS</h3>
 <p><a href="https://cyberbotics.com/doc/guide/tutorial-8-using-ros">教程8：使用ROS</a></p>
 <p><span>本教程說明瞭如何使用</span><code>webots_ros</code><span>Webots附帶的軟件包中的節點。</span></p>
 <p><span><span>這些示例已在ROS<span> </span></span></span><code>melodic</code><span><span>和</span></span><code>kinetic</code><span><span>Linux上</span><span>進行了測試</span><span>。</span></span></p>
 <p><span><span><a href="https://cyberbotics.com/doc/guide/tutorial-8-using-ros#installing-ros-and-webots_ros-package-installation"><span>安裝ROS和“ webots_ros”軟件包安裝</span></a></span></span></p>
 <p><span><span><a href="https://cyberbotics.com/doc/guide/tutorial-8-using-ros#running-the-nodes"><span>運行節點</span></a></span></span></p>
 <p><span><span><a href="https://cyberbotics.com/doc/guide/tutorial-8-using-ros#creating-new-nodes"><span>創建新節點</span></a></span></span></p>
-<h2 class="anchor-header" id="robots" name="robots">Robots</h2>
+<h2>Robots</h2>
 <p><strong><a href="https://cyberbotics.com/doc/guide/robots">機械人</a></strong></p>
 <p>Webots中包含的所有機器人型號均在此處列出。用戶也可以添加自己的自定義模型。</p>
-<h1><b>開會紀錄</b></h1>
-<h2><b>W3</b></h2>
+<h1>開會紀錄</h1>
+<h2>W3</h2>
 <p><b><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/c06esX1zO90" width="560"></iframe></b></p>
-<h2><b>W4</b></h2>
+<h2>W4</h2>
 <p><b><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/lObYwRDd4Ro" width="560"></iframe></b></p>
-<br/><b></b>W7
+<p><br/><b></b>W7</p>
